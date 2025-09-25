@@ -6,30 +6,34 @@
 }
 
 body {
-    background-color: #faf7f5;
-    color: #5a4e47;
+    background-color: #f9f5f7; /* Fondo suave que complementa la paleta */
+    color: #5a2a3a; /* Color de texto principal más oscuro que contrasta con los tonos rosados */
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(135deg, #d4bc9c 0%, #a58c6e 100%);
-    color: #fff;
+    background: linear-gradient(135deg, #e5cede 0%, #c99aac 100%); /* Degradado con los colores proporcionados */
+    color: #812853; /* Texto en color vino oscuro para contraste */
     padding: 25px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(129, 40, 83, 0.1);
+    border-bottom: 3px solid #812853; /* Línea decorativa en vino oscuro */
 }
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-    color: #fff;
+    text-shadow: 1px 1px 3px rgba(129, 40, 83, 0.2);
+    color: #812853; /* Vino oscuro elegante */
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .subtitle {
     font-size: 1.2rem;
     opacity: 0.9;
-    color: #f0e6db;
+    color: #a55c7a; /* Tonos medios entre el vino y el rosa */
+    font-style: italic;
 }
 
 .container {
@@ -48,27 +52,29 @@ h1 {
 
 .category-btn {
     padding: 12px 25px;
-    background-color: #e8e0d9;
+    background-color: #e5cede; /* Color lila claro proporcionado */
     border: none;
     border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
-    color: #7a685b;
+    color: #812853; /* Vino oscuro para el texto */
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(129, 40, 83, 0.1);
+    border: 2px solid transparent;
 }
 
 .category-btn:hover {
-    background-color: #d4bc9c;
+    background-color: #c99aac; /* Rosa medio al hacer hover */
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(129, 40, 83, 0.15);
 }
 
 .category-btn.active {
-    background-color: #a58c6e;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #812853; /* Vino oscuro para el botón activo */
+    color: #e5cede; /* Texto en lila claro para contraste */
+    box-shadow: 0 4px 8px rgba(129, 40, 83, 0.2);
+    border: 2px solid #c99aac; /* Borde en rosa medio */
 }
 
 .products-grid {
@@ -81,23 +87,24 @@ h1 {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(201, 154, 172, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid #e8e0d9;
+    border: 1px solid #e5cede; /* Borde en lila claro */
 }
 
 .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 20px rgba(129, 40, 83, 0.15);
+    border-color: #c99aac; /* Borde cambia a rosa medio al hacer hover */
 }
 
 .product-image {
     width: 100%;
     height: 350px;
-    background-color: #f8f4f0;
+    background-color: #f8f4f7; /* Fondo muy claro con tono rosado */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,11 +125,11 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(168, 139, 112, 0.85);
+    background: rgba(129, 40, 83, 0.85); /* Fondo semitransparente en vino oscuro */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #e5cede; /* Texto en lila claro */
     font-size: 1.8rem;
     font-weight: bold;
     transform: rotate(-35deg);
@@ -142,13 +149,13 @@ h1 {
 .product-name {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #7a685b;
+    color: #812853; /* Vino oscuro para los nombres */
     font-weight: 600;
 }
 
 .product-description {
     font-size: 14px;
-    color: #8a7869;
+    color: #7a5a66; /* Color de texto más suave */
     margin-bottom: 15px;
     flex-grow: 1;
 }
@@ -156,7 +163,7 @@ h1 {
 .product-price {
     font-size: 22px;
     font-weight: bold;
-    color: #9c7e5f;
+    color: #c99aac; /* Rosa medio para el precio */
     margin-bottom: 15px;
 }
 
@@ -167,7 +174,7 @@ h1 {
     gap: 10px;
     width: 100%;
     padding: 12px;
-    background-color: #25D366;
+    background-color: #25D366; /* Manteniendo el verde de WhatsApp */
     color: white;
     text-align: center;
     border-radius: 6px;
@@ -186,8 +193,9 @@ footer {
     text-align: center;
     padding: 30px;
     margin-top: 50px;
-    background-color: #d4bc9c;
-    color: #5a4e47;
+    background: linear-gradient(135deg, #c99aac 0%, #812853 100%); /* Degradado con los colores de la paleta */
+    color: #e5cede; /* Texto en lila claro para contraste */
+    border-top: 3px solid #e5cede;
 }
 
 /* Botón flotante de WhatsApp */
@@ -202,7 +210,7 @@ footer {
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 12px rgba(129, 40, 83, 0.25);
     z-index: 100;
     display: flex;
     align-items: center;
@@ -214,7 +222,7 @@ footer {
 .whatsapp-float:hover {
     background-color: #128C7E;
     transform: scale(1.1);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 16px rgba(129, 40, 83, 0.3);
 }
 
 /* Efecto de pulso para llamar la atención */
@@ -235,8 +243,8 @@ footer {
     position: fixed;
     right: 95px;
     bottom: 35px;
-    background-color: #25d366;
-    color: white;
+    background-color: #812853; /* Fondo en vino oscuro */
+    color: #e5cede; /* Texto en lila claro */
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 14px;
@@ -246,7 +254,7 @@ footer {
     transform: translateX(10px);
     pointer-events: none;
     z-index: 99;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(129, 40, 83, 0.1);
 }
 
 .whatsapp-float:hover + .whatsapp-text {
